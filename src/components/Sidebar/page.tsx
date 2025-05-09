@@ -10,7 +10,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
             <SidebarContent />
           </div>
           {/* Right content */}
-          <div className="w-full lg:w-1/2 px-16 pt-24 ml-auto bg-[#1D1B38] overflow-y-auto">
+          <div className="w-full lg:w-1/2 px-8 md:px-16 pt-24 ml-auto bg-[#1D1B38] overflow-y-auto">
             {children}
           </div>
         </div>

@@ -24,7 +24,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="bg-[#1D1B38] w-full max-w-7xl px-16 py-8 flex lg:hidden">
+      <nav className="bg-[#1D1B38] fixed top-0 z-20 w-full max-w-7xl px-8 py-8 flex lg:hidden">
         <div>
           <ul className="flex justify-between gap-11 ">
             {[

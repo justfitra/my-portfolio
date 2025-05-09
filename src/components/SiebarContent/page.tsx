@@ -39,7 +39,7 @@ const SidebarContent = () => {
         <div>
           <h6 className="mb-2">Hi, I am</h6>
           <h1 className="text-5xl font-bold my-2">Fitra Maulana</h1>
-          <h2 className="text-2xl font-medium mt-2">Frontend Developer</h2>
+          <h2 className="text-2xl font-medium mt-2">Fullstack Developer</h2>
           <p className="mt-2 text-gray-500">
             I am a junior web developer who is only self-taught
           </p>

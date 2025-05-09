@@ -44,15 +44,11 @@ const ModalExperience: React.FC<ModalExperienceProps> = ({
             onClick={isClose}
             className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center "
           >
-            <motion.div className="max-w-screen h-[90%] w-[90%]  bg-[#1D1B38] shadow-blue-200 rounded-xl shadow-2xl">
-              <div className="w-full mr-2 h-[300px] overflow-hidden">
-                <Image
-                  src={image}
-                  alt="example.jpg"
-                  className="w-full rounded-xl"
-                />
+            <motion.div className="max-w-screen h-[70%} lg:h-[90%] w-[90%]   bg-[#1D1B38] shadow-blue-200 rounded-xl overflow-hidden shadow-2xl">
+              <div className="w-full h-[260px] md:h-[300px] overflow-hidden ">
+                <Image src={image} alt="example.jpg" className="w-full " />
               </div>
-              <div className="ml-2 full p-5 h-[200px] overflow-y-auto scrollbar-hide">
+              <div className="ml-2 full p-5 h-[260px] md:h-[200px] overflow-y-auto scrollbar-hide">
                 <h4 className="font-semibold text-2xl">{title}</h4>
                 <div className="text-sm">
                   <p className="my-2">{subtitle}</p>
@@ -67,7 +63,7 @@ const ModalExperience: React.FC<ModalExperienceProps> = ({
                   <p>{details}</p>
 
                   <button
-                    className="absolute top-10 right-20 cursor-pointer text-black"
+                    className="absolute top-28 right-8 md:top-10 md:right-20  cursor-pointer text-black"
                     onClick={isClose}
                   >
                     <FontAwesomeIcon icon={faClose} />

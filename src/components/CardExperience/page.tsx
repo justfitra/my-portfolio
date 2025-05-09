@@ -37,13 +37,13 @@ const CardExperience: React.FC<CardExperienceProps> = ({
     <>
       <div
         onClick={(e) => handleClick(e)}
-        className="hover:shadow-2xl flex gap-4 hover:py-3 my-8 hover:px-3 shadow-blue-200 rounded-xl ease-in-out transition-all duration-200 cursor-pointer"
+        className="hover:shadow-2xl block md:flex gap-4 hover:py-3 my-8 hover:px-3 shadow-blue-200 rounded-xl ease-in-out transition-all duration-200 cursor-pointer"
       >
-        <div className="w-1/2">
+        <div className="w-full">
           <Image src={image} alt="" className="w-96 rounded-xl" />
         </div>
 
-        <div className="w-1/2 ">
+        <div className="w-full md:mt-0 mt-4">
           <h6 className="text-lg font-semibold">{title}</h6>
           <div className="md:line-clamp-1 lg:line-clamp-2 line-clamp-1">
             <h5 className="my-5">{subtitle}</h5>
