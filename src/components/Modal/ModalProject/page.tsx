@@ -58,15 +58,15 @@ const ModalProject: React.FC<ModalProjectProps> = ({
             onClick={isClose}
             className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center "
           >
-            <motion.div className="max-w-screen lg:h-[90%] h-[70%] w-[90%]  bg-[#1D1B38] shadow-blue-200 rounded-xl shadow-2xl">
-              <div className="w-full h-44 md:h-[300px] overflow-hidden rounded-lg">
+            <motion.div className="max-w-screen lg:h-[90%] h-[60%] w-[90%]  bg-[#1D1B38] shadow-blue-200 overflow-hidden rounded-xl shadow-2xl">
+              <div className="w-full h-44 md:h-[300px] overflow-hidden ">
                 <Image
                   src={image}
                   alt="example.jpg"
                   className="w-full rounded-none md:rounded-xl"
                 />
               </div>
-              <div className="full flex flex-col p-5 h-[260px] md:h-[200px] overflow-y-auto scrollbar-hide">
+              <div className="full flex flex-col p-5 h-[200px] md:h-[200px] overflow-y-auto scrollbar-hide">
                 <h4 className="font-semibold text-2xl">{title}</h4>
                 <div className="text-sm">
                   <p className="my-2">{subtitle}</p>
@@ -87,7 +87,7 @@ const ModalProject: React.FC<ModalProjectProps> = ({
                   <p>{details}</p>
 
                   <button
-                    className="absolute top-28 right-8 md:top-10 md:right-20 cursor-pointer text-black"
+                    className="absolute top-36 right-8 md:top-10 md:right-20 cursor-pointer text-black"
                     onClick={isClose}
                   >
                     <FontAwesomeIcon icon={faClose} />
@@ -101,12 +101,14 @@ const ModalProject: React.FC<ModalProjectProps> = ({
                     </Link>
                   </div>
                   <div>
-                    <Link href={website} target="_blank">
-                      Website :{" "}
-                      <span className="text-blue-600 hover:underline transition-all ease-in-out">
-                        {website}
-                      </span>
-                    </Link>
+                    {website != "" ? (
+                      <Link href={website} target="_blank">
+                        Website :{" "}
+                        <span className="text-blue-600 hover:underline transition-all ease-in-out">
+                          {website}
+                        </span>
+                      </Link>
+                    ) : null}
                   </div>
                 </div>
               </div>
