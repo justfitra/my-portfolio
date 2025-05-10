@@ -42,7 +42,7 @@ const experiences: Experience[] = [
   {
     image: image2,
     title: "Intern Web Developer",
-    subtitle: "Vistech Software House – February 2023 to July 2023",
+    subtitle: "Vistech Software House – 16 January 2023 to 14 July 2023",
     description: `  During my 6-month internship at Vistech Software House, I gained
               hands-on experience in developing modern web applications. I was
               introduced to and actively involved in building RESTful APIs,
