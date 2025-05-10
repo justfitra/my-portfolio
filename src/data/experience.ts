@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import image1 from "../../public/images/experience1.png";
+import image2 from "../../public/images/experience2.jpg";
 
 export interface ListItem {
   id: number;
@@ -39,7 +40,7 @@ const experiences: Experience[] = [
               solutions for small businesses under time constraints.`,
   },
   {
-    image: image1,
+    image: image2,
     title: "Intern Web Developer",
     subtitle: "Vistech Software House – February 2023 to July 2023",
     description: `  During my 6-month internship at Vistech Software House, I gained

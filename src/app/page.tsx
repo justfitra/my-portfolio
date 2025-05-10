@@ -33,7 +33,7 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center  justify-center  bg-gray-100 w-full">
         <Navbar />
-        <div className="w-full bg-[#1D1B38] px-8 md:px-16 pb-4 pt-28  flex flex-col items-start lg:hidden">
+        <div className="w-full bg-[#1D1B38] h-auto px-8 md:px-16 pb-4 pt-28  flex flex-col items-start lg:hidden">
           <div className="block lg:hidden">
             <h6 className="mb-2">Hi, I am</h6>
             <h1 className="text-5xl font-bold my-2">Fitra Maulana</h1>
