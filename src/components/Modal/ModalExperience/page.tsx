@@ -63,10 +63,10 @@ const ModalExperience: React.FC<ModalExperienceProps> = ({
                   <p>{details}</p>
 
                   <button
-                    className="absolute top-28 right-8 md:top-10 md:right-20  cursor-pointer text-black"
+                    className="absolute top-[200px] right-9 md:top-10 md:right-20  cursor-pointer text-black"
                     onClick={isClose}
                   >
-                    <FontAwesomeIcon icon={faClose} />
+                    <FontAwesomeIcon icon={faClose} className="text-xl" />
                   </button>
                 </div>
               </div>

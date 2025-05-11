@@ -66,7 +66,7 @@ const ModalProject: React.FC<ModalProjectProps> = ({
                   className="w-full rounded-none md:rounded-xl"
                 />
               </div>
-              <div className="full flex flex-col p-5 h-[200px] md:h-[200px] overflow-y-auto scrollbar-hide">
+              <div className="full flex flex-col p-5 h-[330px] md:h-[200px] overflow-y-auto scrollbar-hide">
                 <h4 className="font-semibold text-2xl">{title}</h4>
                 <div className="text-sm">
                   <p className="my-2">{subtitle}</p>
@@ -87,10 +87,10 @@ const ModalProject: React.FC<ModalProjectProps> = ({
                   <p>{details}</p>
 
                   <button
-                    className="absolute top-36 right-8 md:top-10 md:right-20 cursor-pointer text-black"
+                    className="absolute top-[200px] right-9 md:top-10 md:right-20  cursor-pointer text-black"
                     onClick={isClose}
                   >
-                    <FontAwesomeIcon icon={faClose} />
+                    <FontAwesomeIcon icon={faClose} className="text-xl" />
                   </button>
                   <div className="mt-3 mb-2">
                     <Link href={git} target="_blank">
