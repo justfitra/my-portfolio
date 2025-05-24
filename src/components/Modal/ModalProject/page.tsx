@@ -58,15 +58,21 @@ const ModalProject: React.FC<ModalProjectProps> = ({
             onClick={isClose}
             className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center "
           >
-            <motion.div className="max-w-screen  h-[70%} lg:h-[90%] w-[90%]  bg-[#1D1B38] shadow-blue-200 overflow-hidden rounded-xl shadow-2xl">
-              <div className="w-full h-44 md:h-[300px] overflow-hidden ">
+            <motion.div className="max-w-screen lg:h-[90%] h-[75%] w-[90%]  bg-[#1D1B38] shadow-blue-200 overflow-hidden rounded-xl shadow-2xl">
+              <div className="relative w-full h-[30%] md:h-[300px] overflow-hidden ">
                 <Image
                   src={image}
                   alt="example.jpg"
                   className="w-full rounded-none md:rounded-xl"
                 />
+                <button
+                  className="absolute top-[20px] right-5 md:top-6 md:right-8  cursor-pointer text-black"
+                  onClick={isClose}
+                >
+                  <FontAwesomeIcon icon={faClose} className="text-xl" />
+                </button>
               </div>
-              <div className="full flex flex-col p-5 h-[330px] md:h-[200px] overflow-y-auto scrollbar-hide">
+              <div className="full flex flex-col p-5 h-[70%] md:h-[200px] overflow-y-auto scrollbar-hide">
                 <h4 className="font-semibold text-2xl">{title}</h4>
                 <div className="text-sm">
                   <p className="my-2">{subtitle}</p>
@@ -86,12 +92,6 @@ const ModalProject: React.FC<ModalProjectProps> = ({
 
                   <p>{details}</p>
 
-                  <button
-                    className="absolute top-[100px] right-9 md:top-10 md:right-20  cursor-pointer text-black"
-                    onClick={isClose}
-                  >
-                    <FontAwesomeIcon icon={faClose} className="text-xl" />
-                  </button>
                   <div className="mt-3 mb-2">
                     <Link href={git} target="_blank">
                       Github :{" "}
