@@ -65,7 +65,7 @@ const Home: React.FC = () => {
     { id: "experience", ref: experience },
     { id: "projects", ref: projects },
   ]);
-  const [cursorVariant, setCursorVariant] = useState<CursorVariant>("default");
+  const [cursorVariant] = useState<CursorVariant>("default");
 
   const cursorX = useMotionValue<number>(-100);
   const cursorY = useMotionValue<number>(-100);
@@ -78,7 +78,6 @@ const Home: React.FC = () => {
     const moveCursor = (e: MouseEvent): void => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
-      setCursorVariant("default");
     };
 
     window.addEventListener("mousemove", moveCursor);
