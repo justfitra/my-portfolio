@@ -69,7 +69,6 @@ const Home: React.FC = () => {
 
   const cursorX = useMotionValue<number>(-100);
   const cursorY = useMotionValue<number>(-100);
-  setCursorVariant("default");
 
   const springConfig: SpringConfig = { damping: 25, stiffness: 700 };
   const cursorXSpring = useSpring(cursorX, springConfig);
@@ -79,6 +78,7 @@ const Home: React.FC = () => {
     const moveCursor = (e: MouseEvent): void => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
+      setCursorVariant("default");
     };
 
     window.addEventListener("mousemove", moveCursor);
