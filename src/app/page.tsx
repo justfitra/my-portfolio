@@ -66,7 +66,6 @@ const Home: React.FC = () => {
     { id: "projects", ref: projects },
   ]);
   const [cursorVariant] = useState<CursorVariant>("default");
-
   const cursorX = useMotionValue<number>(-100);
   const cursorY = useMotionValue<number>(-100);
 
