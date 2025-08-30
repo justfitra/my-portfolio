@@ -51,7 +51,7 @@ const CardProject: React.FC<CardProjectProps> = ({
     <>
       <div
         onClick={(e) => handleClick(e)}
-        className="hover:shadow-2xl block md:flex gap-4 hover:py-3 my-8 hover:px-3 shadow-blue-200 rounded-xl ease-in-out transition-all duration-200 cursor-pointer"
+        className="hover:shadow-2xl block md:flex gap-4 hover:text-tertiary my-8  rounded-xl ease-in-out transition-all duration-200 cursor-pointer"
       >
         <div className="w-full md:w-1/2 mr-2">
           <Image src={image} alt="example.jpg" className="w-96 rounded-xl" />

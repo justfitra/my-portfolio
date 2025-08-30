@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Head from "next/head";
 import Link from "next/link";
-import { Poppins } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Fitra Maulana",
   description: "Portfolio Website",
 };
 
-const poppins = Poppins({
+const jetBrains = JetBrains_Mono({
   weight: ["100", "200", "300", "400", "500", "600"],
   subsets: ["latin"],
 });
@@ -29,7 +29,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className={poppins.className}>{children}</body>
+      <body className={jetBrains.className}>{children}</body>
     </html>
   );
 }

@@ -9,7 +9,6 @@ import {
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-// import { useRef } from "react";
 
 const SidebarContent = () => {
   const hash = useHash();
@@ -34,10 +33,10 @@ const SidebarContent = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-start justify-start bg-[#1D1B38]">
+    <div className="min-h-screen flex items-start justify-start bg-primary">
       <div>
         <div>
-          <h6 className="mb-2">Hi, I am</h6>
+          <h6 className="mb-2 text-tertiary">Hi, I am</h6>
           <h1 className="text-5xl font-bold my-2">Fitra Maulana</h1>
           <h2 className="text-2xl font-medium mt-2">Fullstack Developer</h2>
           <p className="mt-2 text-gray-500">
@@ -60,12 +59,12 @@ const SidebarContent = () => {
                 >
                   <div
                     className={`w-10 py-0 h-[1px] group-hover:w-24 ${
-                      hash === item.href ? "w-24 bg-gray-200" : "bg-gray-400"
-                    } group-hover:bg-gray-200 transition-all ease-in-out duration-200 mr-3`}
+                      hash === item.href ? "w-24 bg-tertiary" : "bg-gray-400"
+                    } group-hover:bg-tertiary transition-all ease-in-out duration-200 mr-3`}
                   ></div>
                   <span
-                    className={`text-sm tracking-widest font-semibold group-hover:text-gray-200 transition-all ease-in-out duration-200 ${
-                      hash === item.href ? "text-gray-200" : "text-gray-400"
+                    className={`text-sm tracking-widest font-semibold group-hover:text-tertiary transition-all ease-in-out duration-200 ${
+                      hash === item.href ? "text-tertiary" : "text-gray-400"
                     }`}
                   >
                     {item.label}

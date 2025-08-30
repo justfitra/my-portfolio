@@ -8,10 +8,9 @@
   scroll-behavior: smooth;
 }
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #000000;
+  --color-secondary: #e4e1b6;
+  --color-tertiary: #c4f112;
 }
 
 @media (prefers-color-scheme: dark) {

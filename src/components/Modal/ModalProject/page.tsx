@@ -58,7 +58,7 @@ const ModalProject: React.FC<ModalProjectProps> = ({
             onClick={isClose}
             className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center "
           >
-            <motion.div className="max-w-screen lg:h-[90%] h-[75%] w-[90%]  bg-[#1D1B38] shadow-blue-200 overflow-hidden rounded-xl shadow-2xl">
+            <motion.div className="max-w-screen lg:h-[90%] h-[75%] w-[90%]  bg-primary shadow-blue-200 overflow-hidden rounded-xl shadow-2xl">
               <div className="relative w-full h-[30%] md:h-[300px] overflow-hidden ">
                 <Image
                   src={image}
