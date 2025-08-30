@@ -69,6 +69,7 @@ const Home: React.FC = () => {
 
   const cursorX = useMotionValue<number>(-100);
   const cursorY = useMotionValue<number>(-100);
+  setCursorVariant("default");
 
   const springConfig: SpringConfig = { damping: 25, stiffness: 700 };
   const cursorXSpring = useSpring(cursorX, springConfig);
