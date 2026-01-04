@@ -19,16 +19,24 @@ const SidebarContent = () => {
   ) => {
     e.preventDefault();
     if (href === "/") {
+      window.__ignoreHash = true;
       window.scrollTo({ top: 0, behavior: "smooth" });
       window.location.hash = "#about";
+      setTimeout(() => {
+        window.__ignoreHash = false;
+      }, 800);
       return;
     }
     const targetId = href.replace("#", "");
     const element = document.getElementById(targetId);
 
     if (element) {
-      element.scrollIntoView();
+      window.__ignoreHash = true;
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
       window.location.hash = href;
+      setTimeout(() => {
+        window.__ignoreHash = false;
+      }, 800);
     }
   };
 
