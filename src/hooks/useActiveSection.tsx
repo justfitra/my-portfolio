@@ -15,7 +15,8 @@ const useActiveSection = (sections: Section[]) => {
         entires.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
-
+            // ignore observer when a programmatic scroll is in progress
+            if (window.__ignoreHash) return;
             if (id === "about" && pathname === "/") {
               window.location.hash = "";
             } else if (id) {
@@ -25,7 +26,8 @@ const useActiveSection = (sections: Section[]) => {
         });
       },
       {
-        threshold: 0.7, // 60% section terlihat baru ganti hash
+        threshold: 0.4,
+        rootMargin: "0px 0px -40% 0px",
       }
     );
 
