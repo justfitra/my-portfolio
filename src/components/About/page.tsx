@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="">
+    <div className="min-h-screen">
       <p className="my-5">
         I&#39;m a junior web developer who is mostly self-taught, with a deep
         passion for programming and technology. I&#39;ve been learning for about

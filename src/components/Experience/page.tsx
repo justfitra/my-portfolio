@@ -3,7 +3,7 @@ import experiences from "@/data/experience";
 
 const Experience = () => {
   return (
-    <div className="py-20">
+    <div className=" min-h-screen">
       <h1 className="text-3xl font-bold my-2">Experience</h1>
       {experiences.map((data) => (
         <CardExperience

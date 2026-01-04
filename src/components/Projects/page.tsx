@@ -2,7 +2,7 @@ import CardProject from "@/components/CardProject/page";
 import projects from "@/data/projects";
 const Projects = () => {
   return (
-    <div className="py-20">
+    <div className=" min-h-screen">
       <h1 className="text-3xl font-bold my-2">Projects</h1>
       {projects.map((data) => (
         <CardProject
