@@ -53,6 +53,7 @@ interface CursorVariants {
     height: number;
   };
 }
+
 const Home: React.FC = () => {
   const hash = useHash();
 
@@ -117,7 +118,6 @@ const Home: React.FC = () => {
           transition={cursorTransition}
         />
 
-        {/* Inner dot */}
         <motion.div
           className="fixed top-0 left-0 w-2 h-2  rounded-full pointer-events-none z-10"
           style={{
