@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 import image1 from "../../public/images/wedding-website.png";
 import image2 from "../../public/images/olshop-website.png";
+import image3 from "../../public/images/dome-website.png";
 
 export interface ListItem {
   id: number;
@@ -81,6 +82,30 @@ const projects: Project[] = [
                 workflows, user navigation, and product management.`,
     git: "https://github.com/justfitra/digital-shop-app",
     website: "https://digital-shop-app.vercel.app/home",
+  },
+  {
+    image: image3,
+    title: "Dome Website",
+    subtitle: "Personal Project 2025",
+    description: `A modern, responsive website for a fictional company called "Dome". The site includes a hero section, about us, services, portfolio, and contact pages.`,
+    technology: "Teach Stack :",
+    list: [
+      { id: 1, text: "Next.js" },
+      {
+        id: 2,
+        text: "TailwindCss.",
+      },
+    ],
+    features: "Key Features :",
+    listFeatures: [
+      { id: 1, text: "Modern, responsive design" },
+      { id: 2, text: "Intuitive user navigation" },
+      { id: 3, text: "Engaging hero section" },
+      { id: 4, text: "Comprehensive about us page" },
+    ],
+    details: `This project allowed me to practice creating a complete website from scratch, focusing on design aesthetics and user experience.`,
+    git: "https://github.com/JustNgoding/kubah-app",
+    website: "https://www.domeindonesia.id/",
   },
 ];
 

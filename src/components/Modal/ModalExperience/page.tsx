@@ -45,7 +45,7 @@ const ModalExperience: React.FC<ModalExperienceProps> = ({
             className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center "
           >
             <motion.div className="max-w-screen h-[70%} lg:h-[90%] w-[90%]  bg-[#1D1B38] shadow-blue-200 rounded-xl overflow-hidden shadow-2xl">
-              <div className="w-full relative h-[260px] md:h-[300px] overflow-hidden ">
+              <div className="w-full relative h-[260px] md:h-[350px] overflow-hidden ">
                 <Image src={image} alt="example.jpg" className="w-full " />
                 <button
                   className="absolute top-[20px] right-4 md:top-5 md:right-8  cursor-pointer text-black"
