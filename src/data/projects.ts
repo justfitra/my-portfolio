@@ -85,9 +85,10 @@ const projects: Project[] = [
   },
   {
     image: image3,
-    title: "Dome Website",
-    subtitle: "Personal Project 2025",
-    description: `A modern, responsive website for a fictional company called "Dome". The site includes a hero section, about us, services, portfolio, and contact pages.`,
+    title: "Dome Indonesia",
+    subtitle: "Mosque Dome Manufacturer Website",
+    description: `Dome Indonesia is a company specializing in the design, production, and installation of high-quality mosque domes, serving clients across Indonesia. For this project, I developed a company profile website that presents their full range of products and services in a clean, informative, and conversion-focused layout.
+The site showcases multiple dome materials — enamel, GRC (Glassfiber Reinforced Cement), galvalum, and stainless steel with gold finishing — as well as several dome shapes inspired by iconic mosque architecture, including Nabawi, Madina, Pinang, and Bawang styles. It also features a gallery of ceiling motifs and calligraphy designs, along with an extensive portfolio section displaying dozens of completed mosque dome projects to build trust and showcase real-world craftsmanship.`,
     technology: "Teach Stack :",
     list: [
       { id: 1, text: "Next.js" },
@@ -98,12 +99,12 @@ const projects: Project[] = [
     ],
     features: "Key Features :",
     listFeatures: [
-      { id: 1, text: "Modern, responsive design" },
-      { id: 2, text: "Intuitive user navigation" },
-      { id: 3, text: "Engaging hero section" },
-      { id: 4, text: "Comprehensive about us page" },
+      { id: 1, text: "Responsive landing page highlighting the company's value propositions (free site survey, free 3D design, free installation, free shipping)" },
+      { id: 2, text: "Structured product catalog organized by dome type and shape, each with descriptive specifications" },
+      { id: 3, text: "Image gallery sections for ceiling motifs and past projects" },
+      { id: 4, text: "Direct WhatsApp integration on every product card, enabling instant customer inquiries with pre-filled messages per product" },
     ],
-    details: `This project allowed me to practice creating a complete website from scratch, focusing on design aesthetics and user experience.`,
+    details: `The goal was to give Dome Indonesia a professional online presence that reflects the quality of their craftsmanship while making it effortless for potential clients to browse products and reach out directly via WhatsApp — the primary sales channel for this business.`,
     git: "https://github.com/JustNgoding/kubah-app",
     website: "https://www.domeindonesia.id/",
   },
